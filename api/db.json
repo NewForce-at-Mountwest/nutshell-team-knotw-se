@@ -1,43 +1,68 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "username": "Steve",
-            "email": "me@me.com"
-        }
-    ],
-
-    "messages": [
-        {
-            "id": 1,
-            "userId": 1,
-            "message": "What's up?"
-        }
-    ],
-
-    "news": [
-        {
-            "id": 1,
-            "userId": 2,
-            "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
-            "title": "Wormholes Allow Information to Escape Black Holes",
-            "synopsis": "Check out this recent discovery about workholes"
-        }
-    ],
-
-    "friends": [
-        {
-            "id": 1,
-            "userId": 1,
-            "otherFriendId": 3
-        }
-    ],
-
-    "tasks": [
-        { "id": 1,
-            "userId": 3,
-            "task": "Take out garbage"
-        }
-    ]
-
+  "users": [
+    {
+      "id": 1,
+      "username": "Steve",
+      "email": "me@me.com",
+      "password": "1"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "userId": 1,
+      "message": "What's up?"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "userId": 2,
+      "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
+      "title": "Wormholes Allow Information to Escape Black Holes",
+      "synopsis": "Check out this recent discovery about workholes"
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "userId": 1,
+      "otherFriendId": 3
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "userId": 3,
+      "task": "Take out garbage"
+    }
+  ],
+  "events": [
+    {
+      "userId": 3,
+      "name": "Board Meeting",
+      "date": "2/25/2019",
+      "location": "6th Floor",
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "name": "Executive Meeting",
+      "date": "2/25/2019",
+      "location": "10th Floor",
+      "id": 2
+    },
+    {
+      "name": "Jump out",
+      "date": "2/25/2019",
+      "location": "This window",
+      "id": 5
+    },
+    {
+      "name": "dsjkfdskjdfsa",
+      "date": "fdkjdfsjkfdsjk",
+      "location": "dfjkdjkfsd",
+      "id": 6
+    }
+  ]
 }
