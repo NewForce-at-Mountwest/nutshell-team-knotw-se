@@ -1,10 +1,6 @@
 {
     "users": [
-        {
-            "id": 1,
-            "username": "Steve",
-            "email": "me@me.com"
-        }
+
     ],
 
     "messages": [
