@@ -5,7 +5,7 @@ import authForm from "./forms"
 const register = {
 
     reg: () => {
-    document.querySelector("#home").innerHTML = ""
+    document.querySelector("#jh-home").innerHTML = ""
     document.querySelector("#register").innerHTML = authForm.register();
     },
 

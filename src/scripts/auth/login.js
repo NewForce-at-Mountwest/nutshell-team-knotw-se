@@ -10,8 +10,8 @@ const handleLogin = {
         apiFetch.userLogin(userVal)
             .then((parsedUser) => {
                 if (passVal === parsedUser[0].password) {
-                    document.querySelector("#home").innerHTML = ""
-                    document.querySelector("#home").innerHTML = authForm.main()
+                    document.querySelector("#jh-home").innerHTML = ""
+                    document.querySelector("#jh-home").innerHTML = authForm.main()
                     sessionStorage.setItem("userId", parsedUser[0].id)
                 } else {
                     alert("WRONG!")
@@ -19,8 +19,8 @@ const handleLogin = {
             })
     },
     firstLog: () => {
-        document.querySelector("#home").innerHTML = ""
-        document.querySelector("#home").innerHTML = authForm.login()
+        document.querySelector("#jh-home").innerHTML = ""
+        document.querySelector("#jh-home").innerHTML = authForm.login()
     }
 }
 

@@ -4,7 +4,7 @@ import apiFetch from "./auth/apiManager"
 // import handleLogin from "./auth/login"
 
 
-document.querySelector("#home").innerHTML = authForm.home();
+document.querySelector("#jh-home").innerHTML = authForm.home();
 clicks.reg()
 clicks.register()
 clicks.firstLog()
