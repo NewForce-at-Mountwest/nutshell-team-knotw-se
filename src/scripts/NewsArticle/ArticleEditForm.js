@@ -8,6 +8,7 @@ const activateEditButton = () => {
             ArticleCollection.getSingleArticle(event.target.id.split("-")[1])
             .then((singleArticle) => {
                 document.querySelector("#article-title").value = singleArticle.title;
+                document.querySelector("#article-timestamp").value = singleArticleObj.timestamp;
                 document.querySelector("#article-synopsis").value = singleArticle.synopsis;
                 document.querySelector("#article-url").value = singleArticle.url;
                 document.querySelector("#save-article").textContent = "Edit Article";

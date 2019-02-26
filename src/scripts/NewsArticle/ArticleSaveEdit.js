@@ -10,13 +10,14 @@ const handleEditedArticle = () => {
 
       // Get User Input:
       const titleVal = document.querySelector("#article-title").value;
+      const timestampVal = document.querySelector("#article-timestamp").value;
       const synopsisVal = document.querySelector("#article-synopsis").value;
       const urlVal = document.querySelector("#article-url").value;
 
       const articleId = event.target.id.split("-")[2];
 
       // Turn User Input into Object
-      const objectToPost = buildArticleObject(nameVal, phoneVal, emailVal);
+      const objectToPost = buildArticleObject(titleVal, timestampVal, synopsisVal, urlVal);
 
       ArticleCollection.editArticle(articleId, objectToPost).then(() => {
         ArticleList();

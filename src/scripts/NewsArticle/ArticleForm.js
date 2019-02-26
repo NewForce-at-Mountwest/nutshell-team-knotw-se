@@ -12,6 +12,7 @@ const ArticleForm = {
       <h3>Add a New Article</h3>
       <form action="">
         <input type="text" id="article-title" placeholder="Title">
+        (<input type="time" id="article-timestamp" placeholder="Timestamp" value="event.timeStamp">)
         <input type="text" id="article-synopsis" placeholder="Synopsis">
         <input type="url" id="article-url" placeholder="URL">
       </form>
@@ -24,17 +25,18 @@ const ArticleForm = {
 
             // Get User Input:
             const titleVal = document.querySelector("#article-title").value;
+            const timestampVal = document.querySelector("#article-timestamp").value;
             const synopsisVal = document.querySelector("#article-synopsis").value;
             const urlVal = document.querySelector("#article-url").value;
 
             // Turn User Input into Object:
-            const objectToPost = buildArticleObject(titleVal, synopsisVal, urlVal)
+            const objectToPost = buildArticleObject(titleVal, timestampVal, synopsisVal, urlVal)
 
             // Save the Object to Database:
             ArticleCollection.saveNewArticle(objectToPost)
             .then(() => {
 
-                // Once POST is complete, Print All [News] Articles (Again):
+                // Once POST is Complete, Print All [News] Articles (Again):
                 ArticleList();
 
                 // Clear Form Values:
