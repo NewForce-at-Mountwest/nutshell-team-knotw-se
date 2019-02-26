@@ -2,6 +2,7 @@ import eventFormBuilder from "./eventForm";
 import buildEventObject from "./eventObject";
 import eventApiManager from "./apiManager";
 import printAllEvents from "./printAllEvents";
+import eventEditFormBuilder from "./editForm";
 document.querySelector("#addEventButton").addEventListener("click", () => {
     console.log("you clicked the button!")
     document.querySelector("#eventFormContainer").innerHTML =
@@ -15,6 +16,27 @@ document.querySelector("body").addEventListener("click", () => {
         const locationValue = document.querySelector("#eventFormLocation").value;
         const newEventObject = buildEventObject(nameValue, dateValue, locationValue);
         eventApiManager.postNewEvent(newEventObject)
-        .then(printAllEvents)
+            .then(printAllEvents)
+    }
+    else if ((event.target.classList.contains("editButton"))) {
+        let eventEditId = event.target.id.split("-")[1];
+        eventApiManager.getSingleEvent(eventEditId)
+            .then((singleEventInfo) => {
+                document.querySelector(`#eventContainer-${eventEditId}`).innerHTML = ""
+                document.querySelector(`#eventContainer-${eventEditId}`).innerHTML = eventEditFormBuilder(singleEventInfo);
+            })
+    }
+    else if (event.target.classList.contains("saveEditedEvent")) {
+        const itemId = event.target.id.split("-")[1];
+            const editedName = document.querySelector(`#eventEditName-${itemId}`).value;
+            const editedDate = document.querySelector(`#eventEditDate-${itemId}`).value;
+            const editedLocation = document.querySelector(`#eventEditLocation-${itemId}`).value;
+            const editedEventObject = buildEventObject(editedName, editedDate, editedLocation);
+        eventApiManager.editEvent(itemId, editedEventObject)
+            .then(printAllEvents)
+    }
+    else if (event.target.classList.contains("deleteButton")) {
+        let eventDeleteId = event.target.id.split("-")[1];
+        eventApiManager.deleteEvent(eventDeleteId)
     }
 });
