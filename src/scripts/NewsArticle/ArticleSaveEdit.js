@@ -6,7 +6,7 @@ import ArticleForm from "./ArticleForm";
 
 // An Edited Article Handler that Handles User Inputs:
 const handleEditedArticle = () => {
-  // Select Article Firm Output ("#article-form-output") as Location of 'Click' Event Listener:
+  // Select Article Form Output ("#article-form-output") as Location of 'Click' Event Listener:
   document.querySelector("#article-form-output").addEventListener("click", () => {
     // Target Edit Article ID; If Included, Get User Input:
     if (event.target.id.includes("edit-article")) {
