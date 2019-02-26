@@ -1,4 +1,4 @@
-// An ArticleCollection Component that Loads Existing Articles from Storage and Saves New Ones.
+// An ArticleCollection Component (Constant) that Loads Existing Articles from Storage and Saves New Ones.
 const ArticleCollection = {
     saveNewArticle: articleObj => {
         return fetch("http://localhost:8088/articles", {
@@ -11,19 +11,23 @@ const ArticleCollection = {
     },
     // Each New Article Should Have an Auto-Generated Identifier.
     getAllArticles: () => {
-      const activeUserId = sessionStorage.getItem("userId");
-        return fetch(`http://localhost:8088/articles?userId=${activeUserId}`)
-        .then(r => r.json());
+        // Get Active User ID and Input into Session Storage:
+        const activeUserId = sessionStorage.getItem("userId");
+            return fetch(`http://localhost:8088/articles?userId=${activeUserId}`)
+            .then(r => r.json());
     },
+    // Delete Selected Article (by ID):
     deleteArticle: (articleId) => {
         return fetch(`http://localhost:8088/articles/${articleId}`, {
             method: "DELETE"
         })
     },
+    // Get / Fetch [Single] Selected Article (by ID):
     getSingleArticle: (articleId) => {
         return fetch(`http://localhost:8088/articles/${articleId}`)
         .then(r=> r.json())
     },
+    // Edit / Put Selected Article (by ID):
     editArticle: (articleId, articleObj) => {
         return fetch(`http://localhost:8088/articles/${articleId}`, {
             method: "PUT",

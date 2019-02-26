@@ -2,7 +2,8 @@
 import BuildArticle from "./Article.js"
 import ArticleCollection from "./ArticleCollection.js"
 
-// An ArticleList Component that Displays ALL News Articles. It should import the Article Component and the ArticleCollection Component (See Above).
+// An ArticleList Component that Displays ALL News Articles:
+// It should import the Article Component and the ArticleCollection Component (See Above).
 const ArticleList = () => {
     document.querySelector("#articles-output").innerHTML = "";
     ArticleCollection.getAllArticles()
