@@ -2,7 +2,7 @@ import authForm from "./auth/forms";
 import clicks from "./auth/clicks"
 import apiFetch from "./auth/apiManager"
 import eventApiManager from "./events/apiManager"
-import printAllEvents from "./events/printAllEvents"
+import clickWizard from "./events/click"
 // import handleLogin from "./auth/login"
 
 
@@ -11,8 +11,10 @@ clicks.reg()
 clicks.register()
 clicks.firstLog()
 clicks.login()
-apiFetch.addUser()
 clicks.logout()
+clickWizard.addEventFunction()
+clickWizard.saveEventFunction()
+clickWizard.editButtonFunction()
+clickWizard.saveEditButtonFunction()
+clickWizard.deleteButtonFunction()
 
-eventApiManager.getAllEvents()
-printAllEvents()
