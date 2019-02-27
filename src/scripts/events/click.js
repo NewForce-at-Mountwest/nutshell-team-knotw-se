@@ -9,6 +9,7 @@ const clickWizard = {
        if (event.target.id === "addEventButton") {
     console.log("click")
     document.querySelector("#eventFormContainer").innerHTML = eventFormBuilder.eventFormInputs()
+    printAllEvents()
 }})},
  saveEventFunction: () => {
     document.querySelector("body").addEventListener("click", () => {
