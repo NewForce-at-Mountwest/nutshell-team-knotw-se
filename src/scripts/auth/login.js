@@ -1,6 +1,7 @@
 import apiFetch from "./apiManager"
 import authForm from "./forms";
 import printAllEvents from "../events/printAllEvents"
+import clickWizard from "../events/click"
 const handleLogin = {
     login: () => {
         console.log("hello")
