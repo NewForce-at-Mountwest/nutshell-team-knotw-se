@@ -29,3 +29,10 @@
 #register-form {
     font-family: 'Merriweather', serif;
 }
+#chat-form {
+    font-family: 'Merriweather', serif;
+    border-radius: 20px;
+    border-color: #379683;
+    border-width: 10px;
+    background-color: #fbeec1;
+}

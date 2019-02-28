@@ -1,6 +1,7 @@
 import userObj from "./objectBuilder"
 import apiFetch from "./apiManager"
 import authForm from "./forms"
+import ChatList from "../Chat/ChatList";
 
 const register = {
 
@@ -19,8 +20,9 @@ const register = {
     apiFetch.addUser(userInput)
     .then((parsedUser) => {
         sessionStorage.setItem("userId", parsedUser.id)
-        // document.querySelector("#register").innerHTML = ""
-        // document.querySelector("#login").innerHTML = authForm.login();
+        document.querySelector("#register").innerHTML = ""
+        document.querySelector("#login").innerHTML = authForm.main();
+        // ChatList.renderChatForm();
     })
     }
 }

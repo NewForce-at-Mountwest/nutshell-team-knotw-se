@@ -1,5 +1,6 @@
 import apiFetch from "./apiManager"
 import authForm from "./forms";
+import loadPageAfterLogin from "../Chat/loadPageAfterLogin";
 const handleLogin = {
     login: () => {
         console.log("hello")
@@ -13,6 +14,7 @@ const handleLogin = {
                     document.querySelector("#jh-home").innerHTML = ""
                     document.querySelector("#jh-home").innerHTML = authForm.main()
                     sessionStorage.setItem("userId", parsedUser[0].id)
+                    loadPageAfterLogin();
                 } else {
                     alert("WRONG!")
                 }

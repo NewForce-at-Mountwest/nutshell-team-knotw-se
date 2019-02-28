@@ -1,13 +1,13 @@
-import buildChatObject from "./chatObj";
-import ChatCollection from "../ChatCollection";
+import buildChatObject from "./ChatObj";
+import ChatCollection from "./ChatCollection";
 import ChatList from "./ChatList";
 import ChatForm from "./ChatForm";
 
 const handleEditedChat = () => {
-  document.querySelector("#chat-output").addEventListener("click", () => {
+  document.querySelector("#form-output").addEventListener("click", () => {
     if (event.target.id.includes("edit-chat")) {
       // Get the user's input
-      const nameVal = document.querySelector("#chat-message").value;
+      const messageVal = document.querySelector("#new-message").value;
       const chatId = event.target.id.split("-")[2];
 
       // Turn the user's input into an object
@@ -15,7 +15,7 @@ const handleEditedChat = () => {
 
       ChatCollection.editChat(chatId, objectToPost).then(() => {
         ChatList();
-        document.querySelector("#chat-output").innerHTML = ChatForm.buildForm();
+        document.querySelector("#form-output").innerHTML = ChatForm.buildForm();
       });
     }
   });

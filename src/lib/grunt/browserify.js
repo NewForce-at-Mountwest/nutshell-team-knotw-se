@@ -2,11 +2,7 @@ module.exports = {
     options: {
         transform: [
             [
-<<<<<<< HEAD
-               "babelify",
-=======
                 "babelify",
->>>>>>> master
                 {
                     "presets": [
                         [

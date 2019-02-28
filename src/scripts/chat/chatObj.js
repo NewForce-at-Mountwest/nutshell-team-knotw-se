@@ -1,9 +1,7 @@
-const buildChatObject = (idParam, messageParam) => {
+const buildChatObject = (messageParam) => {
     return {
-      id: idParam,
       message: messageParam,
       userId: sessionStorage.getItem("userId")
     };
   };
-  
-  export default buildChatObject;
+export default buildChatObject;
