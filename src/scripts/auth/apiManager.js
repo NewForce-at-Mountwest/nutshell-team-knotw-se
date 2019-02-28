@@ -16,8 +16,6 @@ const apiFetch = {
         return fetch(`http://localhost:8089/users?user=${user}`)
         .then(r => r.json())
 
-    }
+     }
 }
-
-
-export default apiFetch
+ export default apiFetch;

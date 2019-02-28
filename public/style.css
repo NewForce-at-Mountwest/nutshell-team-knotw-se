@@ -17,7 +17,7 @@
 }
 #login-btnn, #register-btn{
     border-radius: 10px;
-    border-color: #379683;
+    border-color: #B68154;
     border-width: 3px;
     background-color: #fbeec1;
     padding: 10px 24px;
@@ -100,4 +100,76 @@
 }
 .check-h1 {
     font-size: 45px;
+}
+
+#register-form {
+    font-family: 'Merriweather', serif;
+}
+#addEventButton{
+    width: 11.5rem;
+    border-radius: 10px;
+    border-color: #B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+}
+
+#eventFormInputs{
+    border-radius: 10px;
+    border-color: #B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+}
+.allDaEvents{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-radius: 10px;
+    border:5px solid #B68154;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+    width: 6rem
+}
+.allDaEvents:first-of-type {
+    background-color: #B68154;
+    border: 5px solid #fbeec1;
+    width: 8rem;
+}
+
+.allDaEvents:first-of-type p{
+font-size: 125%
+}
+
+#eventContainer{
+    display: flex;
+    flex-flow: column wrap;
+    width: 10rem
+}
+
+.editButton{
+    border-radius: 10px;
+    border-color: #B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+}
+
+.deleteButton{
+    border-radius: 10px;
+    border-color:#B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+};
+.icon{
+    height: 5vh;
+}
+body{
+    background-color: #FAD39F
 }

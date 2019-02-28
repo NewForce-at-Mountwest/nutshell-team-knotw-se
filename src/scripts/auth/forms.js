@@ -2,7 +2,7 @@ const authForm = {
     home: () => {
         return `
         <div id="home-container">
-        <h1>Welcome to NutShell</h1>
+        <h1>Welcome to NutShell <img class= "icon" src="https://static.thenounproject.com/png/195426-200.png" alt="" ></h1>
         <div id ="home-button">
         <div id ="login-div"><button id="login-btnn">Login</button></div>
         <div id ="register"><button id="register-btn">Register</button></div>
@@ -40,7 +40,7 @@ const authForm = {
     },
     main: () => {
         return `
-        <button id = "logout" class="logout">Logout</button>
+        <button id = "logoutButton" class="logout">Logout</button>
         `
     }
 }
