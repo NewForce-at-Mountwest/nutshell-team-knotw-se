@@ -2,6 +2,9 @@ import apiFetch from "./apiManager"
 import authForm from "./forms";
 import form from "../task/taskForm"
 import print from "../task/printTask"
+import printAllEvents from "../events/printAllEvents"
+import clickWizard from "../events/click"
+
 
 const handleLogin = {
     firstLog: () => {
@@ -19,6 +22,7 @@ const handleLogin = {
                     // document.querySelector("#task").innerHTML = form.taskForm();
                     document.querySelector("#task").innerHTML = form.createTask();
                     sessionStorage.setItem("userId", parsedUser[0].id)
+                    printAllEvents()
                     print()
                 } else {
                     alert("Wrong password, try again!");
