@@ -98,6 +98,11 @@
 .checked-class {
     text-decoration: line-through;
 }
-.check-h1 {
-    font-size: 45px;
+.checkbox-h1 {
+    display: flex;
+    align-items: baseline;
+    font-size: 15px;
+}
+.josh {
+    display: flex;
 }
