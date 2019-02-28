@@ -1,3 +1,4 @@
+/* AUTH CSS */
 #home-container {
     display: flex;
     flex-direction: column;
@@ -25,7 +26,78 @@
 #login-btnn:hover, #register-btn:hover {
     padding: 12px 26px;
 }
+#register-attempt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    height: 10em;
+    margin: 10%;
+}
+#input-fields{
+    display: inline-flex;
+    flex-direction: column;
+}
+#name-register, #email-register, #username-register, #password-register{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: #379683;
 
-#register-form {
-    font-family: 'Merriweather', serif;
+}
+#create-btn{
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    border-color: #379683;
+    border-width: 3px;
+    background-color: #fbeec1;
+}
+#login-attempt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    height: 10em;
+    margin: 10%;
+}
+#log-btn{
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    border-color: #379683;
+    border-width: 3px;
+    background-color: #fbeec1;
+    width: 100px
+}
+#login-name, #login-pass {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: #379683;
+}
+#login-form {
+    display: inline-flex;
+    flex-direction: column;
+}
+#jh-attempt {
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    border-color: #379683;
+    border-width: 3px;
+    background-color: #fbeec1;
+    width: 100px
+}
+/* END OF AUTH CSS */
+.checked-class {
+    text-decoration: line-through;
+}
+.check-h1 {
+    font-size: 45px;
 }
