@@ -10,7 +10,6 @@ const print = () => {
             document.querySelector("#print-task").innerHTML += printTaskBuilder(singleTask)
         })
     })
-
 }
 
 export default print

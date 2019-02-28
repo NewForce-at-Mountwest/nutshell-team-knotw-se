@@ -16,7 +16,8 @@ const handleLogin = {
                 if(passVal === parsedUser[0].password) {
                     document.querySelector("#jh-home").innerHTML = ""
                     // document.querySelector("#jh-home").innerHTML = authForm.main()
-                    document.querySelector("#task").innerHTML = form.taskForm();
+                    // document.querySelector("#task").innerHTML = form.taskForm();
+                    document.querySelector("#task").innerHTML = form.createTask();
                     sessionStorage.setItem("userId", parsedUser[0].id)
                     print()
                 } else {

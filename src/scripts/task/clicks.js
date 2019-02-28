@@ -6,6 +6,14 @@ import apiFetch from "./apiManager"
 
 
 const taskClicks = {
+    createTask: () => {
+        document.querySelector("body").addEventListener("click", () => {
+            if(event.target.classList.contains("create-new-task")){
+                document.querySelector("#task").innerHTML = form.taskForm()
+            }
+        })
+
+    },
     newTask: () => {
         // document.querySelector("#new-task").addEventListener("click", () => {
         //     document.querySelector("#task").innerHTML = form.taskForm()

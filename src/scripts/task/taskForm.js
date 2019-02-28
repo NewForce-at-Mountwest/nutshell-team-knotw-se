@@ -15,6 +15,12 @@ const form = {
         <button id="save-task" class="save-task">Save Task</button>
         </div>
         `
+    },
+    createTask: () => {
+        return `
+        <button id="create-new-task" class = "create-new-task">Create Task</button>
+        <button id = "logout" class="logout">Logout</button>
+        `
     }
     // editForm: () => {
     //     return `

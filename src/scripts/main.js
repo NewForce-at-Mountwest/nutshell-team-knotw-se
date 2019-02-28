@@ -18,6 +18,7 @@ clicks.login()
 clicks.logout()
 
 // document.querySelector("#task").innerHTML = form.newTaskForm()
+taskClicks.createTask();
 taskClicks.newTask()
 taskClicks.saveTask()
 taskClicks.deleteTask()
