@@ -1,7 +1,13 @@
 import authForm from "./auth/forms";
 import clicks from "./auth/clicks"
-import apiFetch from "./auth/apiManager"
-// import handleLogin from "./auth/login"
+import activateEditButton from "./task/edit"
+import handleEditTask from "./task/handleEdit"
+
+
+
+// task imports
+// import form from "./task/taskForm"
+import taskClicks from "./task/clicks"
 
 
 document.querySelector("#jh-home").innerHTML = authForm.home();
@@ -9,5 +15,11 @@ clicks.reg()
 clicks.register()
 clicks.firstLog()
 clicks.login()
-apiFetch.addUser()
 clicks.logout()
+
+// document.querySelector("#task").innerHTML = form.newTaskForm()
+taskClicks.newTask()
+taskClicks.saveTask()
+taskClicks.deleteTask()
+activateEditButton()
+handleEditTask()
