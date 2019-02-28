@@ -1,3 +1,4 @@
+/* AUTH CSS */
 #home-container {
     display: flex;
     flex-direction: column;
@@ -16,7 +17,7 @@
 }
 #login-btnn, #register-btn{
     border-radius: 10px;
-    border-color: #379683;
+    border-color: #B68154;
     border-width: 3px;
     background-color: #fbeec1;
     padding: 10px 24px;
@@ -24,6 +25,81 @@
 }
 #login-btnn:hover, #register-btn:hover {
     padding: 12px 26px;
+}
+#register-attempt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    height: 10em;
+    margin: 10%;
+}
+#input-fields{
+    display: inline-flex;
+    flex-direction: column;
+}
+#name-register, #email-register, #username-register, #password-register{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: #379683;
+
+}
+#create-btn{
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    border-color: #379683;
+    border-width: 3px;
+    background-color: #fbeec1;
+}
+#login-attempt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    height: 10em;
+    margin: 10%;
+}
+#log-btn{
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    border-color: #379683;
+    border-width: 3px;
+    background-color: #fbeec1;
+    width: 100px
+}
+#login-name, #login-pass {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: #379683;
+}
+#login-form {
+    display: inline-flex;
+    flex-direction: column;
+}
+#jh-attempt {
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    border-color: #379683;
+    border-width: 3px;
+    background-color: #fbeec1;
+    width: 100px
+}
+/* END OF AUTH CSS */
+.checked-class {
+    text-decoration: line-through;
+}
+.check-h1 {
+    font-size: 45px;
 }
 
 #register-form {
@@ -36,6 +112,75 @@
     border-width: 10px;
     background-color: #fbeec1;
 }
-#chat-wrapper {
+/* #chat-wrapper {
 
+} */
+
+#addEventButton{
+    width: 11.5rem;
+    border-radius: 10px;
+    border-color: #B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+}
+
+#eventFormInputs{
+    border-radius: 10px;
+    border-color: #B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+}
+.allDaEvents{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-radius: 10px;
+    border:5px solid #B68154;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+    width: 6rem
+}
+.allDaEvents:first-of-type {
+    background-color: #B68154;
+    border: 5px solid #fbeec1;
+    width: 8rem;
+}
+
+.allDaEvents:first-of-type p{
+font-size: 125%
+}
+
+#eventContainer{
+    display: flex;
+    flex-flow: column wrap;
+    width: 10rem
+}
+
+.editButton{
+    border-radius: 10px;
+    border-color: #B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+}
+
+.deleteButton{
+    border-radius: 10px;
+    border-color:#B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+};
+.icon{
+    height: 5vh;
+}
+body{
+    background-color: #FAD39F
 }

@@ -23,7 +23,6 @@ const clicks = {
     login: () => {
         document.querySelector("body").addEventListener("click", () => {
             if(event.target.classList.contains("login")){
-            console.log("hello")
             handleLogin.login()
             }
         })
@@ -31,7 +30,6 @@ const clicks = {
     logout: () => {
         document.querySelector("body").addEventListener("click", () => {
             if(event.target.classList.contains("logout")){
-                console.log("ajdak")
             handleLogout()
             }
 
