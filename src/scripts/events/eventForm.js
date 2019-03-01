@@ -1,6 +1,7 @@
 const eventFormBuilder =  {
     eventFormInputs: () => {
-    return `<form id = "eventFormInputs">
+    return `
+    <form id = "eventFormInputs">
                 <input id = "eventFormName" placeholder = "name">
                 <input id = "eventFormDate" placeholder = "date">
                 <input id = "eventFormLocation" placeholder = "location">

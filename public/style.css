@@ -165,7 +165,8 @@
     background-color: #fbeec1;
     padding: 10px 24px;
     margin: 5px;
-    width: 6rem
+    width: 6rem;
+    flex-direction: row;
 }
 .allDaEvents:first-of-type {
     background-color: #B68154;
@@ -217,7 +218,8 @@ body{
     background-color: #fbeec1;
     padding: 10px 24px;
     margin: 5px;
-    width: 10rem
+    width: 10rem;
+    align-content: center;
 }
 
 .task-delete-btn, .edit {
@@ -229,11 +231,6 @@ body{
     margin: 5px;
 }
 
-/* #logout{ */
-    /* display: inline; */
-    /* margin-left: 80%
-} */
-
 .create-new-task {
     width: 11.5rem;
     border-radius: 10px;
@@ -243,23 +240,8 @@ body{
     padding: 10px 24px;
     margin: 5px;
 }
-/* .logout {
-    width: 6rem;
-    border-radius: 10px;
-    border-color: #B68154;
-    border-width: 3px;
-    background-color: #fbeec1;
-    padding: 10px 24px;
-    margin: 5px; */
-}
-#task {
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: center;
-    align-content: center;
-    align-items: center;
 
-}
+
 #print-task {
     display: flex;
     justify-content: center;
@@ -271,7 +253,7 @@ body{
     justify-content: center;
     align-content: center;
     align-self: center;
-    margin-left: 44%;
+    align-items: center;
 }
 #new-task-container {
     display: flex;
@@ -288,12 +270,23 @@ body{
     margin: 5px;
 
 }
-/* .attempt1 {
+.attempt1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+    /* flex-direction: row; */
+    flex-direction: column;
+}
+#task {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 
-} */
-
+}
+.event-wrap{
+    display: flex;
+    flex-direction: row;
+}
