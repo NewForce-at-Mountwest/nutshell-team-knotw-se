@@ -7,8 +7,6 @@ import activateEditButtons from "./EditChat";
 const loadPageAfterLogin = () => {
 //Builds Chat Form
 document.querySelector("#form-output").innerHTML += ChatForm.renderChatForm();
-// Adds event listener to send button
-ChatForm.activateSendButton();
 // Builds Chat List
 ChatList();
 
