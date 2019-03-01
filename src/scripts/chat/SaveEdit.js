@@ -7,9 +7,8 @@ const handleEditedChat = () => {
   document.querySelector("#form-output").addEventListener("click", () => {
     if (event.target.id.includes("edit-chat")) {
       // Get the user's input
-      const messageVal = document.querySelector("#new-message").value;
+      const messageVal = document.querySelector("#new-message-input").value;
       const chatId = event.target.id.split("-")[2];
-
       // Turn the user's input into an object
       const objectToPost = buildChatObject(messageVal);
 

@@ -7,14 +7,8 @@ import activateEditButtons from "./EditChat";
 const loadPageAfterLogin = () => {
 //Builds Chat Form
 document.querySelector("#form-output").innerHTML += ChatForm.renderChatForm();
-// Builds Chat List
+// // Builds Chat List
 ChatList();
-
-// Activate Delete Buttons
-activateDeleteButtons();
-// Activate Edit Buttons
-activateEditButtons();
-
 }
 
 export default loadPageAfterLogin;

@@ -13,6 +13,9 @@ import clickWizard from "./events/click"
 // task imports
 // import form from "./task/taskForm"
 import taskClicks from "./task/clicks"
+import activateDeleteButtons from "./chat/DeleteChat"
+import activateEditButtons from "./chat/EditChat"
+import handleEditedChat from "./chat/SaveEdit"
 
 
 // apiFetch();
@@ -35,3 +38,7 @@ clickWizard.saveEventFunction()
 clickWizard.editButtonFunction()
 clickWizard.saveEditButtonFunction()
 clickWizard.deleteButtonFunction()
+activateDeleteButtons();
+// Activate Edit Buttons
+activateEditButtons();
+handleEditedChat();

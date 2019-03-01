@@ -17,8 +17,9 @@ const ChatCollection = {
       method: "DELETE"
     })
   },
-  getSingleChat: (chatId) => fetch(`http://localhost:8087/messages/${chatId}`)
-    .then(r => r.json()),
+  getSingleChat: (chatId) => {
+  return fetch(`http://localhost:8087/messages/${chatId}`)
+    .then(r => r.json()) },
 
   editChat: (chatId, chatObj) => {
     return fetch(`http://localhost:8087/messages/${chatId}`, {

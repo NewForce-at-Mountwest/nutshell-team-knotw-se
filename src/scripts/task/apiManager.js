@@ -32,7 +32,7 @@ const apiFetch = {
         })
     },
     editSingle: (taskId) => {
-        return fetch(`http://localhost:8087tasks/${taskId}`)
+        return fetch(`http://localhost:8087/tasks/${taskId}`)
         .then(r=>r.json())
     },
     markAsComplete: (taskId) => {

@@ -46,22 +46,13 @@
     border-color: #379683;
 
 }
-#create-btn, .edit-chat, .delete-chat {
+#create-btn {
     padding: 10px;
     margin: 10px;
     padding-bottom: 25px;
     border-radius: 10px;
     border-color: #379683;
     border-width: 3px;
-    background-color: #fbeec1;
-}
-.edit-chat, .delete-chat, #send-chat {
-    padding: 5px;
-    margin: 2px, 2px, 2px, 2px;
-    padding-bottom: 2px;
-    border-radius: 10px;
-    border-color: #379683;
-    border-width: 2px;
     background-color: #fbeec1;
 }
 #login-attempt{
@@ -193,3 +184,26 @@ font-size: 125%
 body{
     background-color: #FAD39F
 }
+/* chat css */
+/* .edit-chat, .delete-chat, #send-chat, .ne-editw {
+    /* font-family: 'Merriweather', serif;
+    padding: 5px;
+    margin: 2px, 2px, 2px, 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    border-color: #379683;
+    border-width: 2px;
+    background-color: #fbeec1; */
+
+
+button {
+    font-family: 'Merriweather', serif;
+    padding: 5px;
+    margin: 2px, 2px, 2px, 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    border-color: #379683;
+    border-width: 2px;
+    background-color: #fbeec1;
+}
+
