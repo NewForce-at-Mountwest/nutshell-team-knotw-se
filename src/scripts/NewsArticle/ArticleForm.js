@@ -35,7 +35,6 @@ const ArticleForm = {
   // },
   buildForm: () => {
     return `
-    <button id = "logout" class="logout">Logout</button>
     <div class="form" id="article-form">
       <h1>Add a New Article</h1>
       <form action="">
@@ -50,7 +49,7 @@ const ArticleForm = {
     </div>`;
   },
   activateSaveButton: () => {
-      document.querySelector("#form-output").addEventListener("click", () => {
+      document.querySelector("#article-form-output").addEventListener("click", () => {
         var moment = require("moment");
         if(event.target.id === "save-article"){
         // Get User Input:

@@ -3,7 +3,8 @@ import authForm from "./forms";
 import form from "../task/taskForm"
 import print from "../task/printTask"
 import printAllEvents from "../events/printAllEvents"
-import clickWizard from "../events/click"
+import loadPageAfterLogin from "../NewsArticle/loadPageAfterLogin";
+// import clickWizard from "../events/click"
 
 
 const handleLogin = {
@@ -24,6 +25,7 @@ const handleLogin = {
                     sessionStorage.setItem("userId", parsedUser[0].id)
                     printAllEvents()
                     print()
+                    loadPageAfterLogin();
                 } else {
                     alert("Wrong password, try again!");
                 }

@@ -9,7 +9,6 @@ import clickWizard from "./events/click"
 // task imports
 // import form from "./task/taskForm"
 import taskClicks from "./task/clicks"
-import chronology from "./NewsArticle/ArticleArrayDateSort"
 
 
 document.querySelector("#jh-home").innerHTML = authForm.home();
@@ -30,5 +29,3 @@ clickWizard.saveEventFunction()
 clickWizard.editButtonFunction()
 clickWizard.saveEditButtonFunction()
 clickWizard.deleteButtonFunction()
-
-chronology();

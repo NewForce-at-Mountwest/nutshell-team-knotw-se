@@ -1,6 +1,3 @@
-// Imports Functionality to Allow Use in This Module (From Other JavaScript Modules):
-import loadPageAfterLogin from "../NewsArticle/loadPageAfterLogin"
-
 const authForm = {
     home: () => {
         return `
@@ -43,10 +40,9 @@ const authForm = {
     },
 
     main: () => {
-        loadPageAfterLogin();
-        // return `
-        // <button id = "logoutButton" class="logout">Logout</button>
-        // `
+        return `
+        <button id = "logoutButton" class="logout">Logout</button>
+        `
     }
 }
 

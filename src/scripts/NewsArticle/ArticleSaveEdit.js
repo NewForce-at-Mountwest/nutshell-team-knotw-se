@@ -7,7 +7,7 @@ import ArticleForm from "./ArticleForm";
 // An Edited Article Handler that Handles User Inputs:
 const handleEditedArticle = () => {
   // Select Article Form Output ("#article-form-output") as Location of 'Click' Event Listener:
-  document.querySelector("#form-output").addEventListener("click", () => {
+  document.querySelector("#article-form-output").addEventListener("click", () => {
     var moment = require("moment");
     // Target Edit Article ID; If Included, Get User Input:
     if (event.target.id.includes("edit-article")) {
@@ -25,7 +25,7 @@ const handleEditedArticle = () => {
       // Load Existing Articles from Storage; Edit / Put Selected Article (by ID):
       ArticleCollection.editArticle(articleId, objectToPost).then(() => {
         // Write Edited Article [Form] to 'Storage':
-        document.querySelector("#form-output").innerHTML = ArticleForm.buildForm();
+        document.querySelector("#article-form-output").innerHTML = ArticleForm.buildForm();
         // Displays ALL News Articles:
         ArticleList();
       });

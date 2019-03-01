@@ -1,60 +1,10 @@
 {
   "users": [
-    {
-      "name": "a",
-      "email": "a",
-      "user": "a",
-      "password": "a",
-      "id": 3
-    },
-    {
-      "name": "b",
-      "email": "b",
-      "user": "b",
-      "password": "b",
-      "id": 4
-    }
   ],
   "articles": [
-    {
-      "title": "xzCXZ",
-      "time": "2019-02-27T16:06:20-05:00",
-      "synopsis": "ZXcZX",
-      "url": "XZcZX",
-      "userId": "4",
-      "id": 6
-    },
-    {
-      "title": "Joey",
-      "time": "2019-03-01T11:07:05-05:00",
-      "synopsis": "adsfasdafdsafsdaa",
-      "url": "adsfdsaASaassaaszzz",
-      "userId": "3",
-      "id": 7
-    },
-    {
-      "title": "Kimsdaasd",
-      "time": "2019-03-01T09:59:47-05:00",
-      "synopsis": "ljkjlkjsaAFSDASDas",
-      "url": "kljsalkF6609-sadads",
-      "userId": "3",
-      "id": 8
-    },
-    {
-      "title": "hi",
-      "time": "2019-03-01T10:59:34-05:00",
-      "synopsis": "asdasd",
-      "url": "asdsasa",
-      "userId": "3",
-      "id": 9
-    },
-    {
-      "title": "noooo",
-      "time": "2019-03-01T11:06:53-05:00",
-      "synopsis": "1",
-      "url": "2",
-      "userId": "3",
-      "id": 10
-    }
+  ],
+  "events": [
+  ],
+  "tasks": [
   ]
 }
