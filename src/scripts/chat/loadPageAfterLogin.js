@@ -1,7 +1,5 @@
 import ChatList from "./ChatList"
 import ChatForm from "./ChatForm"
-import activateDeleteButtons from "./DeleteChat"
-import activateEditButtons from "./EditChat";
 
 // This module builds the chat list view once a user has logged in
 const loadPageAfterLogin = () => {

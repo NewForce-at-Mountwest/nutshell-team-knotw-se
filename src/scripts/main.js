@@ -14,7 +14,6 @@ import clickWizard from "./events/click"
 // import form from "./task/taskForm"
 import taskClicks from "./task/clicks"
 import activateDeleteButtons from "./chat/DeleteChat"
-import activateEditButtons from "./chat/EditChat"
 import handleEditedChat from "./chat/SaveEdit"
 
 
@@ -31,7 +30,7 @@ taskClicks.createTask();
 taskClicks.newTask()
 taskClicks.saveTask()
 taskClicks.deleteTask()
-activateEditButton()
+activateEditButton();
 handleEditTask()
 clickWizard.addEventFunction()
 clickWizard.saveEventFunction()
@@ -39,6 +38,4 @@ clickWizard.editButtonFunction()
 clickWizard.saveEditButtonFunction()
 clickWizard.deleteButtonFunction()
 activateDeleteButtons();
-// Activate Edit Buttons
-activateEditButtons();
 handleEditedChat();

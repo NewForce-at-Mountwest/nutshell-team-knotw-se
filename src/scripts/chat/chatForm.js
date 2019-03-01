@@ -21,6 +21,7 @@ const ChatForm = {
         const objectToPost = buildChatObject(messageVal);
         ChatCollection.sendNewMessage(objectToPost);
         ChatList();
+        document.querySelector("#new-message-input").value = "";
       }
 
     }
