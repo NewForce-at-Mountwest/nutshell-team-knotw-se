@@ -182,7 +182,8 @@ font-size: 125%
     height: 5vh;
 }
 body{
-    background-color: #FAD39F
+    background-color: #FAD39F;
+    scroll-behavior: smooth;
 }
 /* chat css */
 /* .edit-chat, .delete-chat, #send-chat, .ne-editw {
@@ -206,4 +207,8 @@ button {
     border-width: 2px;
     background-color: #fbeec1;
 }
-
+#chat-wrapper {
+    font-family: 'Merriweather', serif;
+    flex-direction: row;
+    justify-items: right
+}
