@@ -1,5 +1,4 @@
 // Imports Functionality to Allow Use in This Module (From Other JavaScript Modules):
-// import logOutHandler from "./apiManager.js"
 import ArticleList from "./ArticleList.js"
 import ArticleForm from "./ArticleForm.js"
 import activateDeleteButtons from "./ArticleDeletion.js"

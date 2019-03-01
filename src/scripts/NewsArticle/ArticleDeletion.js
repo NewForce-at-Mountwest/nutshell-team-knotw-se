@@ -1,7 +1,6 @@
 // Imports Functionality to Allow Use in This Module (From Other JavaScript Modules):
 import ArticleCollection from "./ArticleCollection";
 import ArticleList from "./ArticleList";
-// import chronology from "./ArticleArrayDateSort";
 
 // Activate the Delete Button(s) to Respond to 'Click' Events:
 const activateDeleteButtons = () => {
@@ -16,7 +15,6 @@ const activateDeleteButtons = () => {
             ArticleCollection.deleteArticle(idToDelete)
             // Displays ALL [Other, Non-Deleted] News Articles:
             .then(ArticleList);
-            // chronology();
         }
     })
 }

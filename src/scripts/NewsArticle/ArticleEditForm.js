@@ -1,7 +1,6 @@
 // Imports Functionality to Allow Use in This Module (From Other JavaScript Modules):
 import ArticleCollection from "./ArticleCollection";
 import handleEditedArticle from "./ArticleSaveEdit";
-// import chronology from "./ArticleArrayDateSort";
 
 // Activate the Edit Button(s) to Respond to 'Click' Events:
 const activateEditButton = () => {

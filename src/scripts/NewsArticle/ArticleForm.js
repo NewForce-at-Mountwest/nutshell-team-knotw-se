@@ -2,7 +2,6 @@
 import ArticleCollection from "./ArticleCollection";
 import buildArticleObject from "./ArticleObjectBuilder";
 import ArticleList from "./ArticleList";
-// import chronology from "./ArticleArrayDateSort";
 
 // A NewsForm component that, when Populated (Filled Out) and a Submitted (Button Pressed), Adds a New Article to 'Storage';
 // It should import the NewsCollection Component (See Above):
