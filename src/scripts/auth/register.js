@@ -19,8 +19,8 @@ const register = {
     apiFetch.addUser(userInput)
     .then((parsedUser) => {
         sessionStorage.setItem("userId", parsedUser.id)
-        // document.querySelector("#register").innerHTML = ""
-        // document.querySelector("#login").innerHTML = authForm.login();
+        document.querySelector("#register").innerHTML = ""
+        document.querySelector("#login").innerHTML = authForm.main();
     })
     }
 }

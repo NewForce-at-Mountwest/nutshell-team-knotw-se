@@ -29,3 +29,5 @@
 #register-form {
     font-family: 'Merriweather', serif;
 }
+
+.as-console-wrapper { max-height: 100% !important; top: 0; }

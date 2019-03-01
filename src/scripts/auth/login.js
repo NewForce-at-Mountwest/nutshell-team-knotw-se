@@ -10,9 +10,9 @@ const handleLogin = {
         apiFetch.userLogin(userVal)
             .then((parsedUser) => {
                 if (passVal === parsedUser[0].password) {
+                    sessionStorage.setItem("userId", parsedUser[0].id)
                     document.querySelector("#jh-home").innerHTML = ""
                     document.querySelector("#jh-home").innerHTML = authForm.main()
-                    sessionStorage.setItem("userId", parsedUser[0].id)
                 } else {
                     alert("WRONG!")
                 }

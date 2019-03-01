@@ -1,10 +1,12 @@
 // A Form Should Be Presented to the User, which Includes the Following Information (Objects):
-const buildArticleObject = (titleParam, timestampParam, synopsisParam, urlParam) => {
+const buildArticleObject = (titleParam, timeParam, synopsisParam, urlParam) => {
     return {
       // 1(a). News title (titleParam):
       title: titleParam,
-      // 1(b). Timestamp (timestampParam):
-      time: timestampParam,
+      // 1(b). Date (dateParam):
+      // date: dateParam,
+      // 1(c). Timestamp (timestampParam):
+      time: timeParam,
       // 2. Synopsis (synopsisParam):
       synopsis: synopsisParam,
       // 3. URL (urlParam):
