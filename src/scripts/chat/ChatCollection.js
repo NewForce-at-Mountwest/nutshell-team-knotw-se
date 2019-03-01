@@ -1,6 +1,6 @@
 const ChatCollection = {
   sendNewMessage: (objectToPost) => {
-    return fetch("http://localhost:8087/messages", {
+    return fetch("http://localhost:8089/messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -9,20 +9,20 @@ const ChatCollection = {
     });
   },
   getAllChats: () => {
-    return fetch("http://localhost:8087/messages?_expand=user")
+    return fetch("http://localhost:8089/messages?_expand=user")
     .then(messages => messages.json());
    },
   deleteChat: (chatId) => {
-    return fetch(`http://localhost:8087/messages/${chatId}`, {
+    return fetch(`http://localhost:8089/messages/${chatId}`, {
       method: "DELETE"
     })
   },
   getSingleChat: (chatId) => {
-  return fetch(`http://localhost:8087/messages/${chatId}`)
+  return fetch(`http://localhost:8089/messages/${chatId}`)
     .then(r => r.json()) },
 
   editChat: (chatId, chatObj) => {
-    return fetch(`http://localhost:8087/messages/${chatId}`, {
+    return fetch(`http://localhost:8089/messages/${chatId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
