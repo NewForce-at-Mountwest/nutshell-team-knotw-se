@@ -16,12 +16,6 @@ const handleLogin = {
         const passVal = document.querySelector("#login-pass").value;
         apiFetch.userLogin(userVal)
             .then((parsedUser) => {
-<<<<<<< HEAD
-                if (passVal === parsedUser[0].password) {
-                    sessionStorage.setItem("userId", parsedUser[0].id)
-                    document.querySelector("#jh-home").innerHTML = ""
-                    document.querySelector("#jh-home").innerHTML = authForm.main()
-=======
                 if(passVal === parsedUser[0].password) {
                     document.querySelector("#jh-home").innerHTML = ""
                     // document.querySelector("#jh-home").innerHTML = authForm.main()
@@ -30,7 +24,6 @@ const handleLogin = {
                     sessionStorage.setItem("userId", parsedUser[0].id)
                     printAllEvents()
                     print()
->>>>>>> master
                 } else {
                     alert("Wrong password, try again!");
                 }

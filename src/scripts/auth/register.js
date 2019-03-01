@@ -22,14 +22,10 @@ const register = {
     .then((parsedUser) => {
         sessionStorage.setItem("userId", parsedUser.id)
         document.querySelector("#register").innerHTML = ""
-<<<<<<< HEAD
-        document.querySelector("#login").innerHTML = authForm.main();
-=======
         // document.querySelector("#login").innerHTML = authForm.main()
         document.querySelector("#task").innerHTML = form.taskForm();
         document.querySelector("#login").innerHTML = authForm.main();
         printAllEvents();
->>>>>>> master
     })
     }
 }
