@@ -1,3 +1,26 @@
+/* CSS EVERYONE NEEDS TO USE*/
+/* Buttons - {
+    border-radius: 10px;
+    border-color:#B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+*/
+/* PUT YOUR OUTPUT - {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-radius: 10px;
+    border:5px solid #B68154;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+    width: 6rem
+    */
+
+
+
 /* AUTH CSS */
 #home-container {
     display: flex;
@@ -101,10 +124,15 @@
 .checkbox-h1 {
     display: flex;
     align-items: baseline;
-    font-size: 15px;
+    font-size: 10px;
 }
 .check-h1 {
-    font-size: 45px;
+    font-size: 35px;
+}
+.task-p{
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 #register-form {
@@ -174,7 +202,98 @@ font-size: 125%
 };
 .icon{
     height: 5vh;
+    margin-left: 5%;
 }
 body{
     background-color: #FAD39F
 }
+
+.print-task {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-radius: 10px;
+    border:5px solid #B68154;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+    width: 10rem
+}
+
+.task-delete-btn, .edit {
+    border-radius: 10px;
+    border-color:#B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+}
+
+/* #logout{ */
+    /* display: inline; */
+    /* margin-left: 80%
+} */
+
+.create-new-task {
+    width: 11.5rem;
+    border-radius: 10px;
+    border-color: #B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+}
+/* .logout {
+    width: 6rem;
+    border-radius: 10px;
+    border-color: #B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px; */
+}
+#task {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+#print-task {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.create-new-task {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin-left: 44%;
+}
+#new-task-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+}
+.logout {
+    border-radius: 10px;
+    border-color:#B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 5px 15px;
+    margin: 5px;
+
+}
+/* .attempt1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+} */
+

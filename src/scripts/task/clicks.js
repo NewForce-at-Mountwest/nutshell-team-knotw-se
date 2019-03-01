@@ -37,6 +37,8 @@ const taskClicks = {
                         print()
                         document.querySelector("#main-task").value = ""
                         document.querySelector("#complete-date").value = ""
+                        document.querySelector("#new-task-container").innerHTML = ""
+                        document.querySelector("#task").innerHTML = form.createTask();
                     })
             } else if(event.target.classList.contains("checkbox")){
                 const taskId = event.target.id.split("-")[1]; // 14
@@ -44,7 +46,6 @@ const taskClicks = {
                 if(document.querySelector(`#checkbox-${taskId}`).checked){
                   apiFetch.markAsComplete(taskId)
                   document.querySelector(`#possibly-${taskId}`).classList.add("checked-class")
-                // document.querySelector("#task-print").innerHTML = ""
                 } else {
                   apiFetch.markAsIncomplete(taskId)
                   document.querySelector(`#possibly-${taskId}`).classList.remove("checked-class")

@@ -1,5 +1,6 @@
 import apiFetch from "./apiManager"
 import handleEditTask from "./handleEdit"
+import form from "./taskForm"
 // first edit click
 
 const activateEditButton = () => {
@@ -12,6 +13,8 @@ const activateEditButton = () => {
             console.log(event.target.id.split("-"))
             apiFetch.editSingle(event.target.id.split("-")[2])
                 .then((singleTask) => {
+                    document.querySelector("#task").innerHTML = ""
+                    document.querySelector("#task").innerHTML = form.taskForm()
                     document.querySelector("#main-task").value = singleTask.task;
                     document.querySelector("#complete-date").value = singleTask.date;
 

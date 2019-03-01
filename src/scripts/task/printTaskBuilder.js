@@ -19,8 +19,8 @@ const printTaskBuilder = (tasks) => {
     </div>
     </label>
     <p>${tasks.date}</p>
+    <button class="edit" id="task-edit-${tasks.id}">Update</button>
     <button class="task-delete-btn" id="task-delete-${tasks.id}">Delete</button>
-    <button class="edit" id="task-edit-${tasks.id}">Edit</button>
     </div>
     `
 }
