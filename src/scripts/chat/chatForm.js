@@ -15,12 +15,12 @@ const ChatForm = {
     </div>`;
   },
   activateSendButton: () => {
+    // ChatList();
     document.querySelector("#form-output").addEventListener("click", () => {
       if (event.target.id === "send-chat") {
         const messageVal = document.querySelector("#new-message-input").value;
         const objectToPost = buildChatObject(messageVal);
         ChatCollection.sendNewMessage(objectToPost);
-        ChatList();
         document.querySelector("#new-message-input").value = "";
       }
 

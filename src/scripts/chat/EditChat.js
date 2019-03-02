@@ -2,9 +2,11 @@ import ChatCollection from "./ChatCollection";
 import handleEditedChat from "./SaveEdit";
 
 
-const activateEditButton = () => {
+const editChatButton = () => {
+
     document.querySelector("#chat-output").addEventListener("click", () => {
         if(event.target.classList.contains("edit-chat")){
+            console.log(event.target.id);
             ChatCollection.getSingleChat(event.target.id.split("-")[2])
             .then((singleChat) => {
                 document.querySelector("#new-message-input").value = `${singleChat.message}`;
@@ -17,4 +19,4 @@ const activateEditButton = () => {
     })
 }
 
-export default activateEditButton;
+export default editChatButton;

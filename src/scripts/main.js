@@ -15,6 +15,7 @@ import clickWizard from "./events/click"
 import taskClicks from "./task/clicks"
 import activateDeleteButtons from "./chat/DeleteChat"
 import handleEditedChat from "./chat/SaveEdit"
+import editChatButton from "./chat/EditChat"
 
 
 // apiFetch();
@@ -39,3 +40,4 @@ clickWizard.saveEditButtonFunction()
 clickWizard.deleteButtonFunction()
 activateDeleteButtons();
 handleEditedChat();
+editChatButton();
