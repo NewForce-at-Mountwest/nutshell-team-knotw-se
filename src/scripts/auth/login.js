@@ -18,8 +18,6 @@ const handleLogin = {
             .then((parsedUser) => {
                 if(passVal === parsedUser[0].password) {
                     document.querySelector("#jh-home").innerHTML = ""
-                    // document.querySelector("#jh-home").innerHTML = authForm.main()
-                    // document.querySelector("#task").innerHTML = form.taskForm();
                     document.querySelector("#task").innerHTML = form.createTask();
                     document.querySelector(".logout_1").innerHTML = form.loggout();
                     sessionStorage.setItem("userId", parsedUser[0].id)
