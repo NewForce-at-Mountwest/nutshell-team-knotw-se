@@ -15,5 +15,7 @@ const handleLogout = () => {
     document.querySelector("#eventFormContainer").innerHTML = ""
     document.querySelector("#eventContainer").innerHTML = ""
     document.querySelector("#login").innerHTML = ""
+    document.querySelector("#article-form-output").innerHTML = ""
+    document.querySelector("#articles-output").innerHTML = ""
 }
 export default handleLogout
