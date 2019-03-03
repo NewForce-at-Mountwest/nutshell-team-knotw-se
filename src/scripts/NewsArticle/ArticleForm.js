@@ -50,7 +50,7 @@ const ArticleForm = {
   },
   activateSaveButton: () => {
       document.querySelector("#article-form-output").addEventListener("click", () => {
-        var moment = require("moment");
+        var moment = require("../../lib/node_modules/moment");
         if(event.target.id === "save-article"){
         // Get User Input:
           const titleVal = document.querySelector("#article-title").value;

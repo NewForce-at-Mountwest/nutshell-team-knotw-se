@@ -1,10 +1,14 @@
 {
   "users": [
+    {
+      "name": "a",
+      "email": "a",
+      "user": "a",
+      "password": "a",
+      "id": 1
+    }
   ],
-  "articles": [
-  ],
-  "events": [
-  ],
-  "tasks": [
-  ]
+  "articles": [],
+  "events": [],
+  "tasks": []
 }
