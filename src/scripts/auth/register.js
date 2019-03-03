@@ -1,6 +1,7 @@
 import userObj from "./objectBuilder"
 import apiFetch from "./apiManager"
 import authForm from "./forms"
+import ChatList from "../Chat/ChatList";
 import printAllEvents from "../events/printAllEvents";
 import form from "../task/taskForm"
 
@@ -24,8 +25,10 @@ const register = {
         document.querySelector("#register").innerHTML = ""
         // document.querySelector("#login").innerHTML = authForm.main()
         document.querySelector("#task").innerHTML = form.taskForm();
-        document.querySelector("#login").innerHTML = authForm.main();
+        // document.querySelector("#login").innerHTML = authForm.main();
         printAllEvents();
+        ChatList();
+
     })
     }
 }

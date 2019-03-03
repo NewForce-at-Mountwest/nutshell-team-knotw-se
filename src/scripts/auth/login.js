@@ -1,5 +1,6 @@
 import apiFetch from "./apiManager"
 import authForm from "./forms";
+import loadPageAfterLogin from "../Chat/loadPageAfterLogin";
 import form from "../task/taskForm"
 import print from "../task/printTask"
 import printAllEvents from "../events/printAllEvents"
@@ -22,6 +23,7 @@ const handleLogin = {
                     // document.querySelector("#task").innerHTML = form.taskForm();
                     document.querySelector("#task").innerHTML = form.createTask();
                     sessionStorage.setItem("userId", parsedUser[0].id)
+                    loadPageAfterLogin();
                     printAllEvents()
                     print()
                 } else {
