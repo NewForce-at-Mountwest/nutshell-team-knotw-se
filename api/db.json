@@ -8,7 +8,16 @@
       "id": 1
     }
   ],
-  "articles": [],
+  "articles": [
+    {
+      "title": "Hey",
+      "time": "2019-03-03T17:13:25-05:00",
+      "synopsis": "Hi",
+      "url": "www.google.com",
+      "userId": "1",
+      "id": 1
+    }
+  ],
   "events": [],
   "tasks": []
 }
