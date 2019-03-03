@@ -10,7 +10,7 @@ const ArticleList = () => {
     .then(articles => {
         // Work with JSON Data Here:
             for (const article of articles) {
-                var Moment = require("moment");
+                var Moment = require("../../lib/node_modules/moment")
                 article.time = Moment(article.time);  // Do Not Call Format
             }
             articles.sort((left, right) => {

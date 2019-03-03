@@ -8,7 +8,7 @@ import ArticleForm from "./ArticleForm";
 const handleEditedArticle = () => {
   // Select Article Form Output ("#article-form-output") as Location of 'Click' Event Listener:
   document.querySelector("#article-form-output").addEventListener("click", () => {
-    var moment = require("moment");
+    var moment = require("../../lib/node_modules/moment");
     // Target Edit Article ID; If Included, Get User Input:
     if (event.target.id.includes("edit-article")) {
       // Get User Input (Title, Timestamp, Synopsis, and URL + Article ID [Split]):
