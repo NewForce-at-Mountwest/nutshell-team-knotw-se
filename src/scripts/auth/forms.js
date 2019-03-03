@@ -38,6 +38,7 @@ const authForm = {
         </div>
         `
     },
+
     main: () => {
         return `
         <button id = "logoutButton" class="logout">Logout</button>

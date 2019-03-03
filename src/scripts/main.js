@@ -2,8 +2,8 @@ import authForm from "./auth/forms";
 import clicks from "./auth/clicks"
 import activateEditButton from "./task/edit"
 import handleEditTask from "./task/handleEdit"
-import apiFetch from "./auth/apiManager"
-import eventApiManager from "./events/apiManager"
+// import apiFetch from "./auth/apiManager"
+// import eventApiManager from "./events/apiManager"
 import clickWizard from "./events/click"
 // import handleLogin from "./auth/login"
 // task imports
