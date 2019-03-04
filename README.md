@@ -78,4 +78,7 @@ sessionStorage.removeItem("activeUser")
 1. Friend requests, and the ability to reject or accept them
 1. Real time chat updates. If a user in one tab writes a chat message, a user logged in on another tab [will immediately see that chat message](https://www.w3schools.com/jsreF/event_storage_storagearea.asp)
 
+*************************************************************************************************************************
+    This product should be able to handle all of your day-to-day things to do.
+    For testing, you should log in as the username: "m"  and the password: "m". You should be able to keep track of tasks you need to perform, as well as be able to edit or delete those tasks. This application should also keep track of any and all events you have going on in your life. There are options to add, edit and delete tasks as you see fit. As far as your social life, you should be able to keep up with your friends as this application has a chat feature. The chat will let you send a new message, edit that message, or delete it. There is also an articles feature, which allows you to sort through news articles applicable to you. You have the ability to add, edit and delete these articles as well.
 
