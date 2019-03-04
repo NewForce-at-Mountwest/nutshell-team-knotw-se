@@ -1,3 +1,26 @@
+/* CSS EVERYONE NEEDS TO USE*/
+/* Buttons - {
+    border-radius: 10px;
+    border-color:#B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+*/
+/* PUT YOUR OUTPUT - {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-radius: 10px;
+    border:5px solid #B68154;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+    width: 6rem
+    */
+
+
+
 /* AUTH CSS */
 #home-container {
     display: flex;
@@ -98,8 +121,18 @@
 .checked-class {
     text-decoration: line-through;
 }
+.checkbox-h1 {
+    display: flex;
+    align-items: baseline;
+    font-size: 10px;
+}
 .check-h1 {
-    font-size: 45px;
+    font-size: 35px;
+}
+.task-p{
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 #register-form {
@@ -133,7 +166,8 @@
     background-color: #fbeec1;
     padding: 10px 24px;
     margin: 5px;
-    width: 6rem
+    width: 6rem;
+    flex-direction: row;
 }
 .allDaEvents:first-of-type {
     background-color: #B68154;
@@ -170,7 +204,121 @@ font-size: 125%
 };
 .icon{
     height: 5vh;
+    margin-left: 5%;
 }
 body{
     background-color: #FAD39F
+}
+
+.print-task {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-radius: 10px;
+    border:5px solid #B68154;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+    width: 10rem;
+    align-content: center;
+}
+
+.task-delete-btn, .edit {
+    border-radius: 10px;
+    border-color:#B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+}
+
+.create-new-task {
+    width: 11.5rem;
+    border-radius: 10px;
+    border-color: #B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+}
+
+
+#print-task {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.create-new-task {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+}
+#new-task-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+}
+.logout {
+    border-radius: 10px;
+    border-color:#B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 5px 15px;
+    margin: 5px;
+
+}
+.attempt1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    flex-direction: column;
+}
+#task {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+.event-wrap{
+    display: flex;
+    flex-direction: row;
+}
+#create-new-article, .delete, .reddit {
+    border-radius: 10px;
+    border-color:#B68154;
+    border-width: 3px;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+}
+.card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-radius: 10px;
+    border:5px solid #B68154;
+    background-color: #fbeec1;
+    padding: 10px 24px;
+    margin: 5px;
+    width: 6rem
+}
+/* .attempt1, #task {
+
+} */
+.article-attempt {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    flex-direction: column;
 }

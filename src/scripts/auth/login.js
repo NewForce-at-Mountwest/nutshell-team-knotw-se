@@ -4,6 +4,8 @@ import form from "../task/taskForm"
 import print from "../task/printTask"
 import printAllEvents from "../events/printAllEvents"
 import loadPageAfterLogin from "../NewsArticle/loadPageAfterLogin";
+import ArticleForm from "../NewsArticle/ArticleForm";
+import ArticleList from "../NewsArticle/ArticleList"
 // import clickWizard from "../events/click"
 
 
@@ -19,13 +21,15 @@ const handleLogin = {
             .then((parsedUser) => {
                 if(passVal === parsedUser[0].password) {
                     document.querySelector("#jh-home").innerHTML = ""
-                    // document.querySelector("#jh-home").innerHTML = authForm.main()
-                    // document.querySelector("#task").innerHTML = form.taskForm();
                     document.querySelector("#task").innerHTML = form.createTask();
+                    document.querySelector(".logout_1").innerHTML = form.loggout();
                     sessionStorage.setItem("userId", parsedUser[0].id)
+                    // document.querySelector(".article-attempt").innerHTML = ""
                     printAllEvents()
                     print()
                     loadPageAfterLogin();
+                    // document.querySelector(".create-article-attempt").innerHTML = ArticleForm.createArticle()
+                    // ArticleList()
                 } else {
                     alert("Wrong password, try again!");
                 }

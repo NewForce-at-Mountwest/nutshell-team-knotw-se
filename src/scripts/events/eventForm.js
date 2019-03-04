@@ -1,6 +1,7 @@
 const eventFormBuilder =  {
     eventFormInputs: () => {
-    return `<form id = "eventFormInputs">
+    return `
+    <form id = "eventFormInputs">
                 <input id = "eventFormName" placeholder = "name">
                 <input id = "eventFormDate" placeholder = "date">
                 <input id = "eventFormLocation" placeholder = "location">
@@ -8,7 +9,7 @@ const eventFormBuilder =  {
             <button id = "saveNewEvent" class = "saveEventButton">Save event</button`
 },
 
-   eventButton: `<hr><button id="addEventButton">Add an Event!</button>`
+   eventButton: `<button id="addEventButton">Add an Event!</button>`
 }
 
 export default eventFormBuilder;

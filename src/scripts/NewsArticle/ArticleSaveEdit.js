@@ -10,7 +10,7 @@ const handleEditedArticle = () => {
   document.querySelector("#article-form-output").addEventListener("click", () => {
     var moment = require("../../lib/node_modules/moment");
     // Target Edit Article ID; If Included, Get User Input:
-    if (event.target.id.includes("edit-article")) {
+    if (event.target.id.includes("reddit-article")) {
       // Get User Input (Title, Timestamp, Synopsis, and URL + Article ID [Split]):
       const titleVal = document.querySelector("#article-title").value;
       // const dateVal = document.querySelector("#article-date").value;

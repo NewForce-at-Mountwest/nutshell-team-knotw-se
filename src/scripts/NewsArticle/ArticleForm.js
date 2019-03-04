@@ -75,9 +75,16 @@ const ArticleForm = {
               // document.querySelector("#article-timestamp").value = "";
               document.querySelector("#article-synopsis").value = "";
               document.querySelector("#article-url").value = "";
+              // document.querySelector("#article-form").innerHTML = ""
+
           })
         }
       })
+  },
+  createArticle: () => {
+    return `
+    <button id="create-new-article" class = "create-new-article">Create Article</button>
+    `
   }
 };
 
