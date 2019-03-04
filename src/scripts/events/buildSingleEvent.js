@@ -6,7 +6,6 @@ const buildSingleEvent = (singleEvent) => {
                 <p>Location:  ${singleEvent.location}</p>
                 <br>
             <button class="editButton" id= "editEventButton-${singleEvent.id}">Update</button> <button class="deleteButton" id= "deleteButton-${singleEvent.id}">Delete</button>
-        </div>
-        <hr>`
+        </div>`
 };
 export default buildSingleEvent;

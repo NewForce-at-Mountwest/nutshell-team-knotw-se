@@ -8,8 +8,6 @@ const activateEditButton = () => {
     document.querySelector("body").addEventListener("click", () => {
         // debugger;
         if (event.target.classList.contains("edit")) {
-
-            console.log("hello")
             console.log(event.target.id.split("-"))
             apiFetch.editSingle(event.target.id.split("-")[2])
                 .then((singleTask) => {
@@ -21,7 +19,7 @@ const activateEditButton = () => {
                     document.querySelector("#save-task").textContent = "Edit Task";
                     document.querySelector("#save-task").classList.add("newClass")
                     document.querySelector("#save-task").classList.remove("save-task")
-                    document.querySelector("#save-task").id = `edit-task-${singleTask.id}`
+                    document.querySelector("#save-task").id = `update-task-${singleTask.id}`
                 })
         }
     })

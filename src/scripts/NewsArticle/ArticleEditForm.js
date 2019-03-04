@@ -8,7 +8,7 @@ const activateEditButton = () => {
     // Select Articles Output ("#articles-output") as Target of Event Listener:
     document.querySelector("#articles-output").addEventListener("click", () => {
         // Focus / Hone in on "Edit" Button:
-        if(event.target.classList.contains("edit")){
+        if(event.target.classList.contains("reddit")){
             // "-" Specifies the Point(s) Where the Split Take(s) Place;
             // "[1]" Limit Determines the Upper Limit on the Number of Splits to be Found in the Given String:
             ArticleCollection.getSingleArticle(event.target.id.split("-")[1])
@@ -24,7 +24,7 @@ const activateEditButton = () => {
                 document.querySelector("#article-synopsis").value = singleArticle.synopsis;
                 document.querySelector("#article-url").value = singleArticle.url;
                 document.querySelector("#save-article").textContent = "Edit Article";
-                document.querySelector("#save-article").id = `edit-article-${singleArticle.id}`;
+                document.querySelector("#save-article").id = `reddit-article-${singleArticle.id}`;
             })
         }
     })

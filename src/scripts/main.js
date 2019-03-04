@@ -22,6 +22,7 @@ taskClicks.createTask();
 taskClicks.newTask()
 taskClicks.saveTask()
 taskClicks.deleteTask()
+taskClicks.createArticleAttempt();
 activateEditButton()
 handleEditTask()
 clickWizard.addEventFunction()

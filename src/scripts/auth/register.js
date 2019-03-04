@@ -3,11 +3,7 @@ import apiFetch from "./apiManager"
 import authForm from "./forms"
 import printAllEvents from "../events/printAllEvents";
 import form from "../task/taskForm"
-<<<<<<< HEAD
-import print from "../task/printTask"
-=======
 import loadPageAfterLogin from "../NewsArticle/loadPageAfterLogin";
->>>>>>> master
 
 const register = {
 
@@ -37,18 +33,19 @@ const register = {
                 document.querySelector(".logout_1").innerHTML = form.loggout();
                 printAllEvents()
                 print()
+                loadPageAfterLogin();
             })
-    const userInput = userObj(nameVal, emailVal, userVal, passVal)
-    apiFetch.addUser(userInput)
-    .then((parsedUser) => {
-        sessionStorage.setItem("userId", parsedUser.id)
-        document.querySelector("#register").innerHTML = ""
-        // document.querySelector("#login").innerHTML = authForm.main()
-        document.querySelector("#task").innerHTML = form.taskForm();
-        document.querySelector("#login").innerHTML = authForm.main();
-        printAllEvents();
-        loadPageAfterLogin();
-    })
+    // const userInput = userObj(nameVal, emailVal, userVal, passVal)
+    // apiFetch.addUser(userInput)
+    // .then((parsedUser) => {
+    //     sessionStorage.setItem("userId", parsedUser.id)
+    //     document.querySelector("#register").innerHTML = ""
+    //     // document.querySelector("#login").innerHTML = authForm.main()
+    //     document.querySelector("#task").innerHTML = form.taskForm();
+    //     document.querySelector("#login").innerHTML = authForm.main();
+    //     printAllEvents();
+    //     loadPageAfterLogin();
+    // })
     }
 }
 

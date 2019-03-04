@@ -6,7 +6,7 @@ const Article = (singleArticleObj) => {
         <p>${singleArticleObj.synopsis}</p>
         <p>${singleArticleObj.url}</p>
         <button class="delete" id="delete-${singleArticleObj.id}">Delete</button>
-        <button class="edit" id="edit-${singleArticleObj.id}">Edit</button>
+        <button class="reddit" id="reddit-${singleArticleObj.id}">Edit</button>
         </div>`
  }
 

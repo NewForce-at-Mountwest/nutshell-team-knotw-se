@@ -4,6 +4,8 @@ import form from "../task/taskForm"
 import print from "../task/printTask"
 import printAllEvents from "../events/printAllEvents"
 import loadPageAfterLogin from "../NewsArticle/loadPageAfterLogin";
+import ArticleForm from "../NewsArticle/ArticleForm";
+import ArticleList from "../NewsArticle/ArticleList"
 // import clickWizard from "../events/click"
 
 
@@ -22,9 +24,12 @@ const handleLogin = {
                     document.querySelector("#task").innerHTML = form.createTask();
                     document.querySelector(".logout_1").innerHTML = form.loggout();
                     sessionStorage.setItem("userId", parsedUser[0].id)
+                    // document.querySelector(".article-attempt").innerHTML = ""
                     printAllEvents()
                     print()
                     loadPageAfterLogin();
+                    // document.querySelector(".create-article-attempt").innerHTML = ArticleForm.createArticle()
+                    // ArticleList()
                 } else {
                     alert("Wrong password, try again!");
                 }

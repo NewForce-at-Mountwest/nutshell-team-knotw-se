@@ -3,6 +3,7 @@ import print from "./printTask"
 import handleLogout from "../auth/logout"
 import taskObj from "./objectBuilder"
 import apiFetch from "./apiManager"
+import loadPageAfterLogin from "../NewsArticle/loadPageAfterLogin"
 
 
 const taskClicks = {
@@ -84,6 +85,13 @@ const taskClicks = {
                     .then(() => {
                         print()
                     })
+            }
+        })
+    },
+    createArticleAttempt: () => {
+        document.querySelector("body").addEventListener("click", () => {
+            if (event.target.classList.contains("create-new-article")){
+                loadPageAfterLogin();
             }
         })
     }

@@ -9,7 +9,7 @@ const eventFormBuilder =  {
             <button id = "saveNewEvent" class = "saveEventButton">Save event</button`
 },
 
-   eventButton: `<hr><button id="addEventButton">Add an Event!</button>`
+   eventButton: `<button id="addEventButton">Add an Event!</button>`
 }
 
 export default eventFormBuilder;
