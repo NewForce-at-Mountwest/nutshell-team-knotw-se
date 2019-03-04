@@ -6,6 +6,13 @@
       "user": "a",
       "password": "a",
       "id": 1
+    },
+    {
+      "name": "name",
+      "email": "name",
+      "user": "name",
+      "password": "name",
+      "id": 2
     }
   ],
   "articles": [],
