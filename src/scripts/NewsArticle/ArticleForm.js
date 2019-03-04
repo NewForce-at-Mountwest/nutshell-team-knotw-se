@@ -36,7 +36,7 @@ const ArticleForm = {
   buildForm: () => {
     return `
     <div class="form" id="article-form">
-      <h1>Add a New Article</h1>
+      <h1>Add a New Article</h1></br>
       <form action="">
         <input type="text" id="article-title" placeholder="Title of Article">
         <br>
@@ -46,7 +46,7 @@ const ArticleForm = {
         <br>
       </form>
       <button id="save-article">Save Article</button>
-    </div>`;
+      </div>`;
   },
   activateSaveButton: () => {
       document.querySelector("#article-form-output").addEventListener("click", () => {
